@@ -1,32 +1,26 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
-import { CgMail } from 'react-icons/cg';
 
 const About = () => {
     return (
-        <div className="container mx-auto mb-32">
-            <div className="flex flex-col-reverse md:flex-row md:justify-end justify-center items-center p-4">
-                <div className="space-y-4 flex md:flex-col my-4 space-x-4">
-                    <div className="w-18 h-18 bg-text-primary rounded-xl flex items-center justify-center">
-                        <FaGithub className="text-text-secundary text-4xl" />
-                    </div>
-                    <div className="w-18 h-18 bg-text-primary rounded-xl flex items-center justify-center">
-                        <FaLinkedin className="text-text-secundary text-4xl" />
-                    </div>
-                    <div className="w-18 h-18 bg-text-primary rounded-xl flex items-center justify-center">
-                        <CgMail className="text-text-secundary text-4xl" />
-                    </div>
+        <section className="container mx-auto px-4 py-20 md:px-0" id="about">
+            <div className="grid overflow-hidden rounded-lg border border-line bg-foreground text-surface shadow-sm md:grid-cols-[0.85fr_1.15fr]">
+                <div className="border-b border-surface/10 p-8 md:border-b-0 md:border-r md:p-10">
+                    <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">Sobre mi</p>
+                    <h2 className="mt-4 text-4xl font-semibold md:text-5xl">Construyo productos web con foco en utilidad real.</h2>
                 </div>
-                <div className="max-w-2xl md:ml-8 ml-0 p-12 bg-text-primary rounded-xl text-text-secundary">
-                    <h2 className="text-lg font-semibold text-center">Sobre mi</h2>
-                    <p className="text-base max-w-lg mt-4">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In fugit esse nemo. Dolor, aspernatur. Delectus aut error id voluptates facere, asperiores dignissimos ipsa
-                        necessitatibus neque, nobis illo tenetur at sequi.
+
+                <div className="grid gap-6 p-8 text-base leading-8 text-surface/80 md:p-10">
+                    <p>
+                        Soy desarrollador Full Stack y me especializo en aplicaciones para negocios y procesos operativos: catalogos, pedidos, paneles administrativos, gestion de datos y experiencias
+                        responsivas. Me gusta transformar necesidades concretas en interfaces simples, backends ordenados y flujos que se puedan usar todos los dias.
+                    </p>
+                    <p>
+                        Trabajo con React, Next.js, Node.js, Express, MongoDB, MySQL y Tailwind CSS. Busco proyectos donde pueda aportar criterio tecnico, claridad visual y una implementacion
+                        mantenible desde el primer dia.
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
